@@ -18,3 +18,17 @@ Yo debo en mi css llamar a la clase container
    display: flex
 }
 ```
+
+## Justify-content
+![Img](https://miro.medium.com/v2/resize:fit:434/1*iigDGiNFBOUVJQ_07C1B2g.png)
+
+Nostros podemos señalar como van a actuar los elementos hijos, si queremos que estos esten centrados colocariamos `justify-content:center;`
+
+🔴 Recuerda que las propiedades de `justify-content` solo se pueden invocar dentro del elemento padre donde usaste flex
+
+```css
+.container{
+   display: flex;
+   justify-content:center;
+}
+```

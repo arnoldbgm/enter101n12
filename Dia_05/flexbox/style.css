@@ -1,0 +1,9 @@
+.container{
+   display: flex;
+   justify-content:space-between;
+   border: 1px solid rebeccapurple;
+}
+
+.container > div{
+   border: 1px solid black;
+}
