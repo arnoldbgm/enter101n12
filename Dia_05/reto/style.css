@@ -13,6 +13,8 @@ body{
 }
 
 
+/*TODO: Envolver en un media query 0 => 720 */
+
 .card{
    width: 400px;
    border: 1px solid red;
@@ -59,3 +61,8 @@ button{
    height: 42px;
    margin-top: 12px;
 }
+
+
+/*TODO: Usando media querys de 721 => adelante
+mover las cajas para que se ajusten al diseño de la imagen
+para desktop*/
