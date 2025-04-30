@@ -32,3 +32,23 @@ Nostros podemos señalar como van a actuar los elementos hijos, si queremos que 
    justify-content:center;
 }
 ```
+
+## Align-items
+Con `align-items:center` nosotros podemos centrar de manera vertical nuestros elementos hijos.
+
+```css
+.container{
+   display: flex;
+   align-items:center;
+}
+```
+
+## Gap
+El gap me va permitir generar espacio entre mis cajas `gap: 2px;`
+
+```css
+.container{
+   display: flex;
+   gap: 2px;
+}
+```
