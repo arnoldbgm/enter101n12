@@ -1,0 +1,39 @@
+/*
+Para establecer el comportamiento de las cajas en las diferentes pantallas
+Vamos a usar los media queries, que son una forma de aplicar estilos de acuerdo
+al tamaño de la pantalla.
+*/
+
+/*
+   max-width: que signifia que se aplicara estilos desde el nuemro que se le indique hasta el el menor
+   max-width: 600px significa que se aplicara desde 600px hasta el menor tamaño de pantalla
+    0  =>  600px
+   min-width: que significa que se aplicara estilos desde el nuemro que se le indique hasta el mayor
+   min-width: 600px significa que se aplicara desde 600px hasta el mayor tamaño de pantalla
+    600px => Infinito
+*/
+
+/* Pantallas pequeñas que va desde 0 hasta 745px */
+@media (max-width: 745px){
+   /*Aqui va todo mi codigo CSS*/
+   main{
+      background-color: blueviolet;
+   }
+}
+
+/* Pantallas medianas que va desde 746px hasta 1024px */
+@media (min-width: 746px) and (max-width: 1024px){
+   /*Aqui va todo mi codigo CSS*/
+   main{
+      background-color: greenyellow;
+   }
+}
+
+/* Pantallas grandes que va desde 1025px hasta el infinito */
+@media (min-width: 1025px){
+   /*Aqui va todo mi codigo CSS*/
+   main{
+      background-color: lightcoral;
+   }
+}
+
