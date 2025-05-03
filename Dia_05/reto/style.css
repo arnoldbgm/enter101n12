@@ -10,15 +10,15 @@ body{
    justify-content: center;
    align-items: center;
    height: 100vh;
+   background-color: hsl(30, 38%, 92%);
 }
-
 
 /*TODO: Envolver en un media query 0 => 720 */
 
 .card{
    width: 400px;
-   border: 1px solid red;
    border-radius: 16px;
+   background-color: hsl(0, 0%, 100%);
 }
 
 .card > img{
@@ -54,12 +54,20 @@ body{
 
 #main-price{
    font-size: 32px;
+   color: hsl(158, 36%, 37%);
+   font-weight: 700;
 }
 
 button{
    width: 100%;
-   height: 42px;
+   height: 52px;
    margin-top: 12px;
+   background-color: hsl(158, 36%, 37%);
+   border-radius: 16px;
+   border: none;
+   font-size: 14px;
+   color: hsl(0, 0%, 100%);
+   font-weight: 600;
 }
 
 
