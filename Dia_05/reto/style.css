@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*Normalizarlo*/
-*{
+* {
    margin: 0;
    padding: 0;
+   font-family: "Montserrat";
 }
 
 /*Centrar un elemento y colocarlo al medio*/
-body{
+body {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -14,61 +17,72 @@ body{
 }
 
 /*TODO: Envolver en un media query 0 => 720 */
+/*🎨Estilos para mobiles*/
+@media(max-width: 720px) {
 
-.card{
-   width: 400px;
-   border-radius: 16px;
-   background-color: hsl(0, 0%, 100%);
+   .card {
+      width: 400px;
+      border-radius: 16px;
+      background-color: hsl(0, 0%, 100%);
+   }
+
+   .card>img {
+      width: 100%;
+      border-radius: 16px 16px 0 0;
+   }
+
+   .card-content {
+      padding: 24px;
+   }
+
+   .card-content>h2 {
+      font-size: 12px;
+      letter-spacing: 7px;
+      margin-bottom: 12px;
+   }
+
+   .card-content>h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
+      font-family: "Fraunces"
+   }
+
+   .card-content>p {
+      font-size: 18px;
+      margin-bottom: 14px;
+   }
+
+   .price {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+   }
+
+   #main-price {
+      font-size: 32px;
+      color: hsl(158, 36%, 37%);
+      font-weight: 700;
+      font-family: "Fraunces"
+   }
+
+   button {
+      width: 100%;
+      height: 52px;
+      margin-top: 12px;
+      background-color: hsl(158, 36%, 37%);
+      border-radius: 16px;
+      border: none;
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+   }
+
 }
 
-.card > img{
-   width: 100%;
-   border-radius: 16px 16px 0 0;
+@media(min-width: 721px) {
+   
 }
 
-.card-content{
-   padding: 24px;
-}
-
-.card-content > h2{
-   font-size: 12px;
-   letter-spacing: 7px;
-   margin-bottom: 12px;
-}
-
-.card-content > h1{
-   font-size: 38px;
-   margin-bottom: 12px;
-}
-
-.card-content > p{
-   font-size: 18px;
-   margin-bottom: 14px;
-}
-
-.price{
-   display: flex;
-   gap: 16px;
-   align-items: center;
-}
-
-#main-price{
-   font-size: 32px;
-   color: hsl(158, 36%, 37%);
-   font-weight: 700;
-}
-
-button{
-   width: 100%;
-   height: 52px;
-   margin-top: 12px;
-   background-color: hsl(158, 36%, 37%);
-   border-radius: 16px;
-   border: none;
-   font-size: 14px;
-   color: hsl(0, 0%, 100%);
-   font-weight: 600;
-}
 
 
 /*TODO: Usando media querys de 721 => adelante
