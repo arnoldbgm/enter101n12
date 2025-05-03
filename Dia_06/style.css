@@ -14,11 +14,43 @@ header{
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin-right: 300px;
+   /* margin-right: 300px;
    margin-left: 300px;
-   margin-top: 20px;
+   margin-top: 20px; */
+   margin: 20px 300px 0 300px;
 }
 
 header > img{
    height: 35px;
+}
+
+main{
+   text-align: center;
+   margin-top: 30px;
+}
+
+main > h1{
+   font-size: 50px;
+}
+
+main > h2{
+   font-size: 25px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+#buy{
+   height: 35px;
+   width: 125px;
+   background-color: #4547e0;
+   border: none;
+   border-radius: 16px;
+}
+
+#more{
+   height: 35px;
+   width: 125px;
+   background-color: #000000;
+   border: 2px solid #4547e0 ;
+   border-radius: 16px;
 }
