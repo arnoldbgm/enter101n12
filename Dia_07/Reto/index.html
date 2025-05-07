@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 </head>
+
 <body>
-   
+
    <script>
-      
+      /*Alert - Alerta*/
+      // alert("Hola mundo");
+      /*Console - Consola*/
+      // console.log("Hola mundo desde la consola");
+      /*Prompt - Ventana emergente*/
+      // let nombre = prompt("¿Cual es tu nombre?");
+
+      let opcion = Number(prompt(`
+      Bienvenido a mi conversorde PEN a USD
+      Nuestro tipo de cambio es 3.75
+      Escoge una de las siguientes opciones:
+        1. Convertir PEN a USD
+        2. Convertir USD a PEN
+      `))
+
+      console.log(`El valor de la opcion es: ${opcion} y es de tipo: ${typeof opcion}`);
+
+      //   "1" === 1
+      if (opcion === 1) {
+         let PEN = Number(prompt("¿Cuantos soles quieres convertir?"))
+         if (PEN <= 0) {
+            alert("El monto no puede ser menor o igual a cero")
+         } else {
+            alert(`El monto en USD es: ${PEN / 3.75}`)
+         }
+      } else if (opcion === 2) {
+         let USD = Number(prompt("¿Cuantos dolares quieres convertir?"))
+         if (USD <= 0) {
+            alert("El monto no puede ser menor o igual a cero")
+         } else {
+            alert(`El monto en USD es: ${USD * 3.75}`)
+         }
+      } else {
+         alert("Opcion no valida")
+      }
+
+      /*
+         🍏 RETO 02
+         Completar el sistema de conversion de monedas
+         Considerar que cuando entra a la opcion 1:
+            Se debe mostrar una ventana emergente que pida el monto en PEN
+            Se debe mostrar una alerta con el monto convertido a USD
+         Cuando entra a la opcion 2:
+            Se debe mostrar una ventana emergente que pida el monto en USD
+            Se debe mostrar una alerta con el monto convertido a PEN 
+            
+         🌟 Considerar que el tipo de cambio es 3.75
+         RETO EXTRA:
+            No permitir que el usuario ingrese un monto negativo o cero
+      */
+
    </script>
 </body>
+
 </html>
